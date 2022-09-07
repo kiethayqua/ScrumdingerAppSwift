@@ -7,11 +7,22 @@
 
 import Foundation
 
-struct DailyScrum {
+// mỗi DailyScrum cần định danh riêng biệt
+struct DailyScrum: Identifiable {
+    let id: UUID // prop bắt buộc của Identifiable Protocol
     var title: String
     var attendees: [String]
     var lengthInMinutes: Int
     var theme: Theme
+    
+    // khi define một default value cho parameter, có thể bỏ qua nó khi gọi initialize hoặc func
+    init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
+        self.id = id
+        self.title = title
+        self.attendees = attendees
+        self.lengthInMinutes = lengthInMinutes
+        self.theme = theme
+    }
 }
 
 extension DailyScrum {
