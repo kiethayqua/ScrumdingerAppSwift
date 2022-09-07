@@ -16,6 +16,7 @@
 		713653D828C853CF00F4ED45 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713653D728C853CF00F4ED45 /* CardView.swift */; };
 		71DC891A28C87A2A00819669 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC891928C87A2A00819669 /* TrailingIconLabelStyle.swift */; };
 		71DC891C28C87DD600819669 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC891B28C87DD600819669 /* ScrumsView.swift */; };
+		71DC891E28C88AF900819669 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DC891D28C88AF900819669 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		713653D728C853CF00F4ED45 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		71DC891928C87A2A00819669 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		71DC891B28C87DD600819669 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
+		71DC891D28C88AF900819669 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				713653C828C83DBB00F4ED45 /* Assets.xcassets */,
 				713653CA28C83DBB00F4ED45 /* Preview Content */,
 				71DC891B28C87DD600819669 /* ScrumsView.swift */,
+				71DC891D28C88AF900819669 /* DetailView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				713653D628C8520300F4ED45 /* DailyScrum.swift in Sources */,
+				71DC891E28C88AF900819669 /* DetailView.swift in Sources */,
 				71DC891A28C87A2A00819669 /* TrailingIconLabelStyle.swift in Sources */,
 				713653D428C8505A00F4ED45 /* Theme.swift in Sources */,
 				71DC891C28C87DD600819669 /* ScrumsView.swift in Sources */,

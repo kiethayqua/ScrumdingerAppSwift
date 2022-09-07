@@ -52,4 +52,8 @@ enum Theme: String {
             return .black
         }
     }
+    
+    var name: String {
+        rawValue.capitalized
+    }
 }
