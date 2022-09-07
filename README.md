@@ -15,7 +15,15 @@ dẫn đến bug.
 - Hệ thống xác định tất cả các thành phần của một View phụ thuộc vào giá trị của @State property.
 - Những tương tác của User phải thay đổi @State property.
 - Hệ thống render new version của UI bằng cách cập nhật những view nào phụ thuộc vào property đó.
+![alt text](resources/State.png)
 
+### Binding
+- Một thuộc tính được wrap với @Binding chia sẻ quyền đọc và ghi với 1 source of truth đang tồn tại, như 1 @State property.
+- Một @Binding không lưu trữ trực tiếp dữ liệu.
+- Thay vào đó nó tạo một two-way connection giữa 1 source of truth và 1 view dùng để hiển thị và cập nhật dữ liệu.
+- This connection chắc chắn rằng nhiều views liên kết với một phần dữ liệu được đồng bộ.
+![alt text](resources/Binding.png)
+- Hệ thống thiết lập những phụ thuộc giữa data trong @State và Child View chứa @Binding. Parent View và Child View có thể thay đổi thuộc tính source of truth. Framework tự động update cả 2 view thể phản ánh những thay đổi
 
 
 
