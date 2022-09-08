@@ -35,6 +35,19 @@ extension DailyScrum {
             self.name = name
         }
     }
+    
+    struct Data {
+        // dùng default value để lúc khởi tạo không cần truyền argument
+        // VD: calling Data()
+        var title: String = ""
+        var attendees: [Attendee] = []
+        var lengthInMinutes: Double = 5
+        var theme: Theme = .orange
+    }
+    
+    var data: Data {
+        Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+    }
 }
 
 extension DailyScrum {
