@@ -10,7 +10,9 @@
 import Foundation
 import SwiftUI
 
-enum Theme: String {
+
+// Dùng CaseIterable để truy cập (duyệt qua) tất cả enum case
+enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
     case indigo
@@ -55,5 +57,8 @@ enum Theme: String {
     
     var name: String {
         rawValue.capitalized
+    }
+    var id: String {
+        name
     }
 }
